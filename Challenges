@@ -1,0 +1,9 @@
+Key Challenges & Solutions
+
+Challenge	Solution
+
+Handling high-volume streaming data (~2 TB/day)	- Kafka partition tuning & Databricks autoscaling
+Schema changes in real-time data         -       	Delta Lake schema evolution to prevent breaking changes
+Slow query performance on 10+ TB datasets	      - Used Z-Ordering & Delta Caching for optimization
+Ensuring real-time & batch consistency          -	Used Delta Lake ACID transactions
+ETL job failures & monitoring	                  - Configured Azure Monitor alerts & automatic retries
